@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:600|Work+Sans:400,500,600,700&display=swap');
+.login__background {
+    background: linear-gradient(135deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+    font-family: 'work sans';
+    height: 100vh;
+
+    .login__container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 400px;
+        height: 450px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        padding: 15px;
+
+        .login__content {
+            .btn__login {
+                width: 100%;
+                border: none;
+                font-size: 24px;
+                color: #ffffff;
+                border-radius: 5px;
+                background: linear-gradient(135deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+            }
+
+            .forgot__ps {
+                margin-top: 20px;
+                display: block;
+            }
+
+            .other_login {
+                margin-top: 10px;
+                display: block;
+                text-align: center;
+            }
+        }
+
+        .text__login {
+            text-align: center;
+            font-size: 30px;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+        .select__login {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+
+            i {
+                font-size: 25px;
+                margin-top: 10px;
+                border-radius: 50%;
+                height: 50px;
+                width: 50px;
+                line-height: 50px;
+            }
+
+            .fa-facebook-f {
+                color: rgb(255, 255, 255);
+                background-color: #214ade;
+            }
+            .fa-google {
+                color: rgb(255, 255, 255);
+                background-color: #ff5151;
+            }
+            .fa-github {
+                font-size: 44.5px;
+            }
+
+            i + i {
+                margin-left: 20px;
+            }
+        }
+
+        .login__input {
+            margin: 10px 0;
+
+            input {
+                border-radius: 0;
+                border: none;
+                border-bottom: 3px solid #f1f1f1;
+            }
+
+            input:focus {
+                border-bottom: 3px solid #48f5f5;
+                box-shadow: none;
+            }
+            .wrapper {
+                display: flex;
+                align-items: center;
+                position: relative;
+            }
+            .message {
+                height: 25px;
+                margin-top: 5px;
+            }
+
+            .eye {
+                position: absolute;
+                right: 10px;
+                bottom: 10px;
+            }
+        }
+    }
+}
